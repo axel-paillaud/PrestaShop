@@ -319,3 +319,9 @@ default:
                 - Tests\Integration\Behaviour\Features\Context\Domain\AttributeGroupFeatureContext
                 - Tests\Integration\Behaviour\Features\Context\Domain\AttributeFeatureContext
                 - Tests\Integration\Behaviour\Features\Context\Domain\ShopFeatureContext
+
+        module:
+            paths:
+                - %paths.base%/../../../modules/invoicesorter/tests/integration/features
+            contexts:
+                - Tests\Integration\Behaviour\Features\Context\LanguageFeatureContext
