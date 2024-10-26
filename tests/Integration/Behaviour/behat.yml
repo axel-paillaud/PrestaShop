@@ -324,4 +324,4 @@ default:
             paths:
                 - %paths.base%/../../../modules/invoicesorter/tests/integration/features
             contexts:
-                - Tests\Integration\Behaviour\Features\Context\LanguageFeatureContext
+                - Axelweb\InvoiceSorter\Tests\Integration\Features\FeatureContext
