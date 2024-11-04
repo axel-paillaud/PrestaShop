@@ -187,6 +187,7 @@ node_modules/
 composer.phar
 php-cs-fixer
 .grunt/*
+vendor/
 
 # Translations and emails templates
 
