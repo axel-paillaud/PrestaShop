@@ -152,6 +152,7 @@ themes/*/
 themes/classic
 !themes/_core
 !themes/_libraries
+!themes/theme-test
 
 # Vendors and dependencies
 
