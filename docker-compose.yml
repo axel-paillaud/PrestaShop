@@ -1,4 +1,4 @@
-version: '2.1'
+version: "2.1"
 
 volumes:
   db-data:
@@ -34,10 +34,10 @@ services:
       args:
         - VERSION=${VERSION:-8.1-apache}
         - USER_ID=${USER_ID:-1000}
-        - GROUP_ID=${GROUP_ID:-1000}
+        - GROUP_ID=${GROUP_ID:-1002}
         - NODE_VERSION=${NODE_VERSION:-14.21.3}
     environment:
-      DISABLE_MAKE: ${DISABLE_MAKE:-0}
+      DISABLE_MAKE: ${DISABLE_MAKE:-1}
       PS_INSTALL_AUTO: ${PS_INSTALL_AUTO:-1}
       DB_PASSWD: ${DB_PASSWD:-prestashop}
       DB_NAME: ${DB_NAME:-prestashop}
@@ -53,7 +53,15 @@ services:
       PS_ERASE_DB: ${PS_ERASE_DB:-0}
       ADMIN_MAIL: ${ADMIN_MAIL:-demo@prestashop.com}
       ADMIN_PASSWD: ${ADMIN_PASSWD:-Correct Horse Battery Staple}
-    command: ["/tmp/wait-for-it.sh", "--timeout=60", "--strict", "mysql:3306", "--", "/tmp/docker_run_git.sh"]
+    command:
+      [
+        "/tmp/wait-for-it.sh",
+        "--timeout=60",
+        "--strict",
+        "mysql:3306",
+        "--",
+        "/tmp/docker_run_git.sh",
+      ]
     ports:
       - "8001:80"
       - "8002:443"
@@ -62,3 +70,20 @@ services:
       - keycloak
     volumes:
       - ./:/var/www/html:delegated
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_prestashop_git
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      UPLOAD_LIMIT: 8G
+      MAX_EXECUTION_TIME: 9999
+      MEMORY_LIMIT: 128M
+      POST_MAX_SIZE: 8G
+    restart: unless-stopped
+    ports:
+      - 8081:80
