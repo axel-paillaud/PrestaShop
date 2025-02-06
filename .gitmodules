@@ -1,0 +1,3 @@
+[submodule "modules/aw_categorytree"]
+	path = modules/aw_categorytree
+	url = git@github.com:axel-paillaud/aw_categorytree.git

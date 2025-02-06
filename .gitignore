@@ -147,6 +147,7 @@ app/config/config.php
 # Themes, modules and overrides
 
 modules/*
+!modules/aw_categorytree
 override/*
 themes/*/
 themes/classic
