@@ -148,6 +148,7 @@ app/config/config.php
 
 modules/*
 !modules/aw_categorytree
+!modules/productcomments
 override/*
 themes/*/
 themes/classic
