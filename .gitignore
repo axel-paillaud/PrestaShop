@@ -149,6 +149,7 @@ app/config/config.php
 modules/*
 !modules/aw_categorytree
 !modules/productcomments
+!modules/applicationperiod
 override/*
 themes/*/
 themes/classic

@@ -3,5 +3,5 @@
 	url = git@github.com:axel-paillaud/aw_categorytree.git
 
 [submodule "modules/applicationperiod"]
-  path = modules/applicationperiod
-  url = git@github.com:axel-paillaud/applicationperiod.git
+	path = modules/applicationperiod
+	url = git@github.com:axel-paillaud/applicationperiod.git
