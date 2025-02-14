@@ -150,6 +150,7 @@ modules/*
 !modules/aw_categorytree
 !modules/productcomments
 !modules/applicationperiod
+!modules/demosymfonyform
 override/*
 themes/*/
 themes/classic
