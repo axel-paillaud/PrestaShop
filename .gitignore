@@ -143,6 +143,7 @@ config/themes/*
 themes/*/config/settings_*.json
 app/config/parameters.old.yml
 app/config/config.php
+config*.xml
 
 # Themes, modules and overrides
 
