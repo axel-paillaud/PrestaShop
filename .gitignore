@@ -152,7 +152,7 @@ modules/*
 !modules/productcomments
 !modules/applicationperiod
 !modules/demosymfonyform
-!modules/aw_shopping_cart
+!modules/aw_shoppingcart
 override/*
 themes/*/
 themes/classic
