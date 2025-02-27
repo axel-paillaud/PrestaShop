@@ -11,3 +11,6 @@
 [submodule "modules/aw_truncatehtml"]
 	path = modules/aw_truncatehtml
 	url = git@github.com:axel-paillaud/aw_truncatehtml
+[submodule "modules/aw_deliveryreassurance"]
+	path = modules/aw_deliveryreassurance
+	url = git@github.com:axel-paillaud/aw_deliveryreassurance
