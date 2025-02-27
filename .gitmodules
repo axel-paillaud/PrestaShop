@@ -8,3 +8,6 @@
 [submodule "modules/aw_mainmenu"]
 	path = modules/aw_mainmenu
 	url = git@github.com:axel-paillaud/aw_mainmenu.git
+[submodule "modules/aw_truncatehtml"]
+	path = modules/aw_truncatehtml
+	url = git@github.com:axel-paillaud/aw_truncatehtml
