@@ -14,3 +14,9 @@
 [submodule "modules/aw_deliveryreassurance"]
 	path = modules/aw_deliveryreassurance
 	url = git@github.com:axel-paillaud/aw_deliveryreassurance
+[submodule "aw_searchbar"]
+	path = aw_searchbar
+	url = git@github.com:axel-paillaud/aw_searchbar.git
+[submodule "modules/aw_searchbar"]
+	path = modules/aw_searchbar
+	url = git@github.com:axel-paillaud/aw_searchbar.git
