@@ -20,3 +20,6 @@
 [submodule "modules/aw_searchbar"]
 	path = modules/aw_searchbar
 	url = git@github.com:axel-paillaud/aw_searchbar.git
+[submodule "modules/aw_imageslider"]
+	path = modules/aw_imageslider
+	url = git@github.com:axel-paillaud/aw_imageslider.git
