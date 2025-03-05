@@ -23,3 +23,6 @@
 [submodule "modules/aw_imageslider"]
 	path = modules/aw_imageslider
 	url = git@github.com:axel-paillaud/aw_imageslider.git
+[submodule "modules/aw_homereassurance"]
+	path = modules/aw_homereassurance
+	url = git@github.com:axel-paillaud/aw_homereassurance.git
